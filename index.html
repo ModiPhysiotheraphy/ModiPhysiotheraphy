@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modi Physiotherpy Clinic | Physiotherapy in Orai & Jhansi</title>
+
+  <!-- Basic SEO -->
+  <meta name="description"
+        content="Modi Physiotherpy Clinic provides expert physiotherapy treatment for spine, joint and sports injuries in Orai and Jhansi, under the guidance of Dr. Shweta Agarwal." />
+  <meta name="keywords"
+        content="Modi Physiotherapy Clinic, Physiotherapy Orai, Physiotherapy Jhansi, Dr Shweta Agarwal, Back Pain Treatment, Slip Disc, Paralysis Rehab" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Modi Physiotherpy Clinic | Orai & Jhansi" />
+  <meta property="og:description"
+        content="Physiotherapy care for spine, joint and sports injuries in Orai & Jhansi." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      color: #0f172a;
+      background-color: #f8fafc;
+      line-height: 1.5;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f766e, #22c55e);
+      color: white;
+      padding: 16px 24px;
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-img {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .logo-sub {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    .nav-small {
+      font-size: 12px;
+      opacity: 0.9;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: flex-end;
+    }
+
+    .lang-toggle {
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: none;
+      background-color: #ffffff;
+      color: #0f766e;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .lang-toggle:hover {
+      background-color: #e0f2f1;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .btn-primary,
+    .btn-whatsapp {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      text-align: center;
+      color: white;
+    }
+
+    .btn-primary {
+      background-color: #0f766e;
+    }
+
+    .btn-primary:hover {
+      background-color: #0d504a;
+    }
+
+    .btn-whatsapp {
+      background-color: #22c55e;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #16a34a;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 40px 0 32px;
+      background: radial-gradient(circle at top left, #dff8f3, #f8fafc);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .tagline {
+      font-weight: 500;
+      margin-bottom: 6px;
+      color: #0f766e;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 6px;
+    }
+
+    .headline-sub {
+      font-size: 16px;
+      color: #1f2937;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 15px;
+      color: #1f2937;
+      margin-bottom: 10px;
+    }
+
+    .hero-points span {
+      display: block;
+      font-size: 13px;
+      color: #475569;
+    }
+
+    .hero-card {
+      background-color: transparent;
+      font-size: 14px;
+    }
+
+    /* Fancy photo frame */
+    .photo-wrapper {
+      background: linear-gradient(145deg, #dbeafe, #ccfbf1);
+      padding: 10px;
+      border-radius: 26px;
+      box-shadow: 0 24px 40px rgba(15, 23, 42, 0.18);
+    }
+
+    .photo-inner {
+      background-color: #ffffff;
+      border-radius: 22px;
+      padding: 6px;
+    }
+
+    .doctor-photo {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      object-fit: cover;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #0f766e;
+      background-color: #ecfdf5;
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin-top: 10px;
+    }
+
+    .doctor-name {
+      font-weight: 600;
+      margin-top: 6px;
+      font-size: 15px;
+    }
+
+    section {
+      padding: 36px 0;
+    }
+
+    section h2 {
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    .section-subtitle {
+      font-size: 14px;
+      color: #64748b;
+      margin-bottom: 6px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 24px;
+    }
+
+    ul {
+      padding-left: 18px;
+      font-size: 14px;
+      color: #475569;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 14px 14px 16px;
+      box-shadow: 0 10px 18px rgba(15, 23, 42, 0.06);
+      font-size: 14px;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #64748b;
+    }
+
+    .highlight {
+      background-color: #f1f5f9;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 13px;
+      color: #475569;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 24px;
+    }
+
+    .contact-item {
+      font-size: 14px;
+      margin-bottom: 6px;
+      color: #334155;
+    }
+
+    form {
+      display: grid;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    label {
+      font-size: 13px;
+      color: #475569;
+    }
+
+    input,
+    textarea {
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    /* Branch cards */
+    .branches-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .branch-meta {
+      font-size: 12px;
+      color: #64748b;
+      margin-bottom: 8px;
+    }
+
+    .branch-actions {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    footer {
+      padding: 16px 0;
+      font-size: 12px;
+      color: #94a3b8;
+      text-align: center;
+    }
+
+    /* Language toggle behaviour */
+    .lang-hi { display: none; }
+    .lang-en { display: block; }
+
+    body.hi .lang-hi { display: block; }
+    body.hi .lang-en { display: none; }
+
+    @media (max-width: 860px) {
+      .hero-grid,
+      .two-col,
+      .grid-3,
+      .contact-grid,
+      .branches-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .nav-small {
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      header {
+        padding-inline: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="logo-row">
+        <!-- change logo.png to your actual logo file name -->
+        <img src="logo.png" alt="Modi Physiotherpy Clinic logo" class="logo-img" />
+        <div>
+          <div class="logo lang-en">Modi Physiotherpy Clinic</div>
+          <div class="logo-sub lang-en">Physiotherapy · Spine · Joint Care</div>
+
+          <div class="logo lang-hi">मोदी फिजियोथेरेपी क्लिनिक</div>
+          <div class="logo-sub lang-hi">फिजियोथेरेपी · रीढ़ · जोड़ों की देखभाल</div>
+        </div>
+      </div>
+      <div class="nav-small">
+        <div class="lang-en">Orai &amp; Jhansi · Spine, Joint &amp; Sports Injury Care</div>
+        <div class="lang-hi">उरई और झाँसी · रीढ़, जोड़ और स्पोर्ट्स इंजरी के लिए देखभाल</div>
+        <button id="langToggle" class="lang-toggle">हिंदी</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="tagline lang-en">Physiotherapy · Pain Relief · Rehab</div>
+          <div class="tagline lang-hi">फिजियोथेरेपी · दर्द से आराम · पुनर्वास</div>
+
+          <h1 class="lang-en">Relief From Pain, Back To Active Life.</h1>
+          <h1 class="lang-hi">दर्द से आराम पाएँ और फिर से सक्रिय जीवन जिएँ।</h1>
+
+          <p class="headline-sub lang-en">
+            Expert physiotherapy care in Orai & Jhansi. Orai branch headed by <strong>Dr. Shweta Agarwal</strong>.
+          </p>
+          <p class="headline-sub lang-hi">
+            उरई और झाँसी में विशेषज्ञ फिजियोथेरेपी उपचार। उरई शाखा की प्रमुख <strong>डॉ. श्वेता अग्रवाल</strong> हैं।
+          </p>
+
+          <p class="lang-en">
+            We help you recover from spine, joint and sports injuries with personalised treatment, hands-on therapy
+            and guided exercises.
+          </p>
+          <p class="lang-hi">
+            हम रीढ़, जोड़ों और स्पोर्ट्स इंजरी से राहत के लिए व्यक्तिगत ट्रीटमेंट, हैंड्स-ऑन थैरेपी
+            और गाइडेड एक्सरसाइज़ प्रदान करते हैं।
+          </p>
+
+          <div style="margin-top: 12px;">
+            <a href="tel:+916394459631" class="btn-primary">Call Orai Clinic</a>
+            <a href="https://wa.me/916394459631?text=Hi%20I%20want%20to%20book%20an%20appointment"
+               class="btn-whatsapp">WhatsApp Orai</a>
+          </div>
+
+          <div class="hero-points" style="margin-top: 12px;">
+            <span class="lang-en">✔ Back & neck pain · ✔ Knee & shoulder pain · ✔ Sports injuries</span>
+            <span class="lang-en">✔ Slip disc / PIVD · ✔ Paralysis rehab · ✔ Individual exercise plans</span>
+
+            <span class="lang-hi">✔ पीठ व गर्दन का दर्द · ✔ घुटना व कंधे का दर्द · ✔ स्पोर्ट्स इंजरी</span>
+            <span class="lang-hi">✔ स्लिप डिस्क / PIVD · ✔ लकवे के मरीजों का पुनर्वास · ✔ अलग-अलग व्यायाम योजना</span>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="photo-wrapper">
+            <div class="photo-inner">
+              <!-- replace doctor-photo.jpg with real photo filename -->
+              <img src="doctor-photo.png"
+                   alt="Physiotherapist at Modi Physiotherpy Clinic in the treatment room"
+                   class="doctor-photo" />
+            </div>
+          </div>
+
+          <span class="badge lang-en">Orai Branch</span>
+          <span class="badge lang-hi">उरई शाखा</span>
+          <div class="doctor-name lang-en">Dr. Shweta Agarwal</div>
+          <div class="doctor-name lang-hi">डॉ. श्वेता अग्रवाल · Physiotherapist</div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container two-col">
+        <div>
+          <h2 class="lang-en">About the Clinic</h2>
+          <h2 class="lang-hi">क्लिनिक के बारे में</h2>
+
+          <p class="section-subtitle lang-en">
+            Trusted physiotherapy centres in Orai & Jhansi focused on pain relief, mobility and long-term recovery.
+          </p>
+          <p class="section-subtitle lang-hi">
+            उरई और झाँसी में हमारे क्लिनिक दर्द से राहत, चलने-फिरने की क्षमता बढ़ाने और लंबे समय तक आराम बनाए रखने पर ध्यान देते हैं।
+          </p>
+
+          <p class="lang-en">
+            <strong>Modi Physiotherpy Clinic</strong> provides complete physiotherapy care for spine, joint and
+            nerve-related problems. We use a combination of assessment, hands-on therapy and exercises so that
+            patients can return to a pain-free, active lifestyle.
+          </p>
+          <p class="lang-hi" style="margin-top: 6px;">
+            <strong>मोदी फिजियोथेरेपी क्लिनिक</strong> रीढ़, जोड़ों और नर्व से जुड़ी समस्याओं के लिए संपूर्ण
+            फिजियोथेरेपी देखभाल प्रदान करता है। यहाँ विस्तृत जाँच, हैंड्स-ऑन थैरेपी और एक्सरसाइज़ के माध्यम से
+            मरीजों को दर्द-मुक्त और सक्रिय जीवन की ओर वापस लाया जाता है।
+          </p>
+
+          <p class="lang-en" style="margin-top: 6px;">
+            At the Orai branch, under the guidance of <strong>Dr. Shweta Agarwal</strong>, each patient receives a personalised
+            plan based on their pain, lifestyle and medical history.
+          </p>
+          <p class="lang-hi" style="margin-top: 6px;">
+            उरई शाखा में <strong>डॉ. श्वेता अग्रवाल</strong> हर मरीज की समस्या, जीवनशैली और मेडिकल हिस्ट्री को देखकर
+            उनके लिए अलग उपचार योजना बनाती हैं।
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="lang-en">Key Highlights</h3>
+          <h3 class="lang-hi">मुख्य विशेषताएँ</h3>
+
+          <ul class="lang-en">
+            <li>Experienced physiotherapy care for spine & joints</li>
+            <li>Excellent patient feedback and ratings</li>
+            <li>Clean, hygienic and well-maintained clinics</li>
+            <li>Gentle, attentive and supportive staff</li>
+            <li>Reasonable charges with good value for money</li>
+          </ul>
+
+          <ul class="lang-hi">
+            <li>रीढ़ और जोड़ों के लिए अनुभवी फिजियोथेरेपी सेवाएँ</li>
+            <li>मरीजों की बेहतरीन प्रतिक्रिया और रेटिंग</li>
+            <li>साफ-सुथरा, हाइजेनिक और अच्छी तरह मेंटेन क्लिनिक</li>
+            <li>नम्र, सहयोगी और ध्यान देने वाला स्टाफ</li>
+            <li>वाजिब फीस के साथ गुणवत्तापूर्ण इलाज</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <h2 class="lang-en">Physiotherapy Services</h2>
+        <h2 class="lang-hi">हमारी फिजियोथेरेपी सेवाएँ</h2>
+
+        <p class="section-subtitle lang-en">
+          We treat a wide range of pain, injury and movement-related problems.
+        </p>
+        <p class="section-subtitle lang-hi">
+          हम दर्द, चोट और चलने-फिरने में परेशानी से जुड़ी कई समस्याओं का उपचार करते हैं।
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3 class="lang-en">Back & Neck Pain</h3>
+            <h3 class="lang-hi">पीठ और गर्दन का दर्द</h3>
+            <p class="lang-en">
+              Treatment for cervical and lumbar problems, spondylosis, muscle spasm and posture-related pain.
+            </p>
+            <p class="lang-hi">
+              सर्वाइकल और कमर दर्द, स्पॉन्डायलोसिस, मसल स्पाज़्म और गलत पॉश्चर से होने वाले दर्द का उपचार।
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="lang-en">Joint & Muscle Pain</h3>
+            <h3 class="lang-hi">जोड़ों और मांसपेशियों का दर्द</h3>
+            <p class="lang-en">
+              Knee, shoulder, ankle, elbow and wrist pain management with manual therapy and exercise programs.
+            </p>
+            <p class="lang-hi">
+              घुटना, कंधा, टखना, कोहनी और कलाई के दर्द के लिए मैनुअल थैरेपी और व्यायाम आधारित उपचार।
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="lang-en">PIVD / Slip Disc</h3>
+            <h3 class="lang-hi">स्लिप डिस्क / PIVD</h3>
+            <p class="lang-en">
+              Physiotherapy for prolapsed intervertebral disc (PIVD), sciatica and nerve compression-related pain.
+            </p>
+            <p class="lang-hi">
+              स्लिप डिस्क (PIVD), साइटिका और नर्व कम्प्रेशन से जुड़े दर्द के लिए विशेष फिजियोथेरेपी।
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="lang-en">Sports Injury Rehab</h3>
+            <h3 class="lang-hi">स्पोर्ट्स इंजरी रिहैब</h3>
+            <p class="lang-en">
+              Rehab for sprains, strains, ligament injuries and return-to-sport conditioning.
+            </p>
+            <p class="lang-hi">
+              खिंचाव, मोच, लिगामेंट इंजरी और खेल में वापसी के लिए रिहैब प्रोग्राम।
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="lang-en">Post-Surgery Rehab</h3>
+            <h3 class="lang-hi">ऑपरेशन के बाद पुनर्वास</h3>
+            <p class="lang-en">
+              Rehabilitation after fracture fixation, joint replacement and orthopaedic surgeries.
+            </p>
+            <p class="lang-hi">
+              फ्रैक्चर, जॉइंट रिप्लेसमेंट और अन्य ऑर्थोपेडिक सर्जरी के बाद पुनर्वास।
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="lang-en">Paralysis / Neuro Rehab</h3>
+            <h3 class="lang-hi">लकवा / न्यूरो रिहैब</h3>
+            <p class="lang-en">
+              Exercise-based rehabilitation and functional training for stroke, paralysis and nerve injuries.
+            </p>
+            <p class="lang-hi">
+              स्ट्रोक, लकवा और नर्व इंजरी के मरीजों के लिए व्यायाम आधारित रिहैब और फंक्शनल ट्रेनिंग।
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-top: 16px;" class="highlight">
+          <span class="lang-en">
+            For latest offers and additional services at each branch, please call or WhatsApp the clinic directly.
+          </span>
+          <span class="lang-hi">
+            नवीनतम ऑफ़र और सेवाओं की जानकारी के लिए कृपया क्लिनिक पर कॉल या व्हाट्सऐप करें।
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Branches -->
+    <section id="branches">
+      <div class="container">
+        <h2 class="lang-en">Our Clinics</h2>
+        <h2 class="lang-hi">हमारी शाखाएँ</h2>
+
+        <p class="section-subtitle lang-en">
+          Visit the branch nearest to you – Orai or Jhansi.
+        </p>
+        <p class="section-subtitle lang-hi">
+          अपने शहर के नज़दीकी क्लिनिक पर आएँ – उरई या झाँसी।
+        </p>
+
+        <div class="branches-grid">
+          <!-- Orai Branch -->
+          <div class="card">
+            <h3 class="lang-en">Orai – Tulsi Nagar</h3>
+            <h3 class="lang-hi">उरई – तुलसी नगर</h3>
+
+            <p class="branch-meta lang-en">Headed by Dr. Shweta Agarwal</p>
+            <p class="branch-meta lang-hi">डॉ. श्वेता अग्रवाल द्वारा संचालित</p>
+
+            <p class="lang-en">
+              Tulsi Nagar, Town Hall Station Road,<br/>
+              Near Ashutosh Auto Parts,<br/>
+              Orai – 285001, Uttar Pradesh
+            </p>
+            <p class="lang-hi">
+              तुलसी नगर, टाउन हॉल स्टेशन रोड,<br/>
+              नज़दीक अशुतोष ऑटो पार्ट्स,<br/>
+              उरई – 285001, उत्तर प्रदेश
+            </p>
+
+            <div class="branch-actions">
+              <a href="tel:+916394459631" class="btn-primary">Call Orai</a>
+              <a href="https://wa.me/916394459631?text=Hi%20I%20want%20to%20book%20an%20appointment"
+                 class="btn-whatsapp">WhatsApp Orai</a>
+            </div>
+          </div>
+
+          <!-- Jhansi Branch -->
+          <div class="card">
+            <h3 class="lang-en">Jhansi – Modi Physiotherpy & Slimming Centre</h3>
+            <h3 class="lang-hi">झाँसी – मोदी फिजियोथेरेपी एंड स्लिमिंग सेंटर</h3>
+
+            <p class="branch-meta lang-en">Out Side Datia Gate Area</p>
+<p class="branch-meta lang-hi">आउट साइड दतिया गेट क्षेत्र</p>
+
+<p class="lang-en">
+  Out Side, Datia Gate Area,<br/>
+  Near Jain Nursing Chauraha,<br/>
+  Opposite Dr K G Dwivedi Hospital,<br/>
+  Datia Gate, Jhansi-284002,<br/>
+  Uttar Pradesh
+</p>
+
+<p class="lang-hi">
+  आउट साइड, दतिया गेट क्षेत्र,<br/>
+  जैन नर्सिंग चौराहा के पास,<br/>
+  डॉ. के जी द्विवेदी अस्पताल के सामने,<br/>
+  दतिया गेट, झांसी - 284002,<br/>
+  उत्तर प्रदेश
+</p>
+
+
+            <div class="branch-actions">
+              <a href="https://www.google.com/maps/place/25%C2%B059'16.5%22N+79%C2%B027'19.5%22E/@25.9879194,79.4554205,17z/data=!3m1!4b1!4m4!3m3!8m2!3d25.9879194!4d79.4554205?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D"
+                 class="btn-primary" target="_blank">
+                <span class="lang-en">Open in Google Maps</span>
+                <span class="lang-hi">Google Maps पर देखें</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact + WhatsApp Form -->
+    <section id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="lang-en">Contact & Appointment</h2>
+          <h2 class="lang-hi">संपर्क और अपॉइंटमेंट</h2>
+
+          <p class="section-subtitle lang-en">
+            Call or WhatsApp to book your appointment at Modi Physiotherpy Clinic.
+          </p>
+          <p class="section-subtitle lang-hi">
+            अपॉइंटमेंट बुक करने के लिए कॉल या व्हाट्सऐप करें।
+          </p>
+
+          <p class="contact-item">
+            <strong>Orai Phone:</strong> +91-63944 59631
+          </p>
+          <p class="contact-item">
+            <strong>Orai WhatsApp:</strong> +91-63944 59631
+          </p>
+          <p class="contact-item lang-en">
+            <strong>Orai Address:</strong><br/>
+            Tulsi Nagar, Town Hall Station Road,<br/>
+            Near Ashutosh Auto Parts,<br/>
+            Orai – 285001, Uttar Pradesh
+          </p>
+          <p class="contact-item lang-hi">
+            <strong>उरई पता:</strong><br/>
+            तुलसी नगर, टाउन हॉल स्टेशन रोड,<br/>
+            अशुतोष ऑटो पार्ट्स के पास,<br/>
+            उरई – 285001, उत्तर प्रदेश
+          </p>
+
+         <p class="contact-item lang-en">
+  <strong>Jhansi Address:</strong><br/>
+  Out Side, Datia Gate Area,<br/>
+  Near Jain Nursing Chauraha,<br/>
+  Opposite Dr K G Dwivedi Hospital,<br/>
+  Datia Gate, Jhansi-284002,<br/>
+  Uttar Pradesh
+</p>
+
+<p class="contact-item lang-hi">
+  <strong>झाँसी पता:</strong><br/>
+  आउट साइड, दतिया गेट क्षेत्र,<br/>
+  जैन नर्सिंग चौराहा के पास,<br/>
+  डॉ. के जी द्विवेदी अस्पताल के सामने,<br/>
+  दतिया गेट, झाँसी - 284002,<br/>
+  उत्तर प्रदेश
+</p>
+
+
+          <div style="margin-top: 10px;">
+            <a href="tel:+916394459631" class="btn-primary">Call Orai Clinic</a>
+            <a href="https://wa.me/916394459631?text=Hi%20I%20want%20to%20book%20an%20appointment"
+               class="btn-whatsapp">WhatsApp Orai</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="lang-en">Quick Enquiry (Orai)</h3>
+          <h3 class="lang-hi">त्वरित पूछताछ (उरई)</h3>
+
+          <!-- WHATSAPP FORM -->
+          <form id="enquiryForm">
+            <div>
+              <label for="name" class="lang-en">Name</label>
+              <label for="name" class="lang-hi">नाम</label>
+              <input id="name" type="text"
+                     placeholder="Your name / अपना नाम लिखें" required />
+            </div>
+            <div>
+              <label for="phone" class="lang-en">Phone</label>
+              <label for="phone" class="lang-hi">फोन</label>
+              <input id="phone" type="tel"
+                     placeholder="Your phone number / अपना मोबाइल नंबर" required />
+            </div>
+            <div>
+              <label for="issue" class="lang-en">Pain / Problem</label>
+              <label for="issue" class="lang-hi">दर्द / समस्या</label>
+              <textarea id="issue"
+                        placeholder="Describe your pain or problem / अपनी समस्या लिखें"></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width: 100%;">
+              <span class="lang-en">Submit</span>
+              <span class="lang-hi">भेजें</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> Modi Physiotherpy Clinic · Orai & Jhansi · All Rights Reserved.
+  </footer>
+
+  <script>
+    // year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // language toggle
+    const toggleBtn = document.getElementById("langToggle");
+    let hindi = false;
+
+    function applyLanguage() {
+      if (hindi) {
+        document.body.classList.add("hi");
+        document.documentElement.lang = "hi";
+        toggleBtn.textContent = "English";
+      } else {
+        document.body.classList.remove("hi");
+        document.documentElement.lang = "en";
+        toggleBtn.textContent = "हिंदी";
+      }
+    }
+
+    applyLanguage(); // default English
+
+    toggleBtn.addEventListener("click", () => {
+      hindi = !hindi;
+      applyLanguage();
+    });
+
+    // WhatsApp form submit
+    const form = document.getElementById("enquiryForm");
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const issue = document.getElementById("issue").value.trim();
+
+        // Tumhara WhatsApp number (with country code, no + sign)
+        const whatsappNumber = "916394459631";
+
+        let message = "New physiotherapy enquiry%0A";
+        message += "Name: " + encodeURIComponent(name) + "%0A";
+        message += "Phone: " + encodeURIComponent(phone) + "%0A";
+        if (issue) {
+          message += "Problem: " + encodeURIComponent(issue) + "%0A";
+        }
+
+        const url = "https://wa.me/" + whatsappNumber + "?text=" + message;
+
+        window.open(url, "_blank");
+      });
+    }
+  </script>
+
+</body>
+</html>
